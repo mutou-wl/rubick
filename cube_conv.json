@@ -1,0 +1,6036 @@
+[{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "YZ-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Y-systotic-Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systolic",
+    "Z-systotic-Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "XZ-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "X-systotic-Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systolic",
+    "Z-systotic-X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "XY-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "X-systotic-Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systolic",
+    "Y-systotic-X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "YZ-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Y-systotic-Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-multicast",
+    "Z-systotic-Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, y+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*t5, 8*y+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*y+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "XZ-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "X-systotic-Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-multicast",
+    "Z-systotic-X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, x+8*z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*t5, 8*x+z+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+z+64*t6, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "XY-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "X-systotic-Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-multicast",
+    "Y-systotic-X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, x+8*y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[z+8*t5, 8*x+y+64*t6, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[8*x+y+64*t6, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[z+8*t5, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "XY-multicast",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "XY-multicast",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "XZ-multicast",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "XZ-multicast",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "YZ-multicast",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "YZ-multicast",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systotic-Y-multicast",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systotic-Y-multicast",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systotic-Z-multicast",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "X-systotic-Z-multicast",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -x+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -x+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systotic-X-multicast",
+    "Z-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, -z+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, -z+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systotic-X-multicast",
+    "Z-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+y+64*t6, z+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[z+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+y+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systotic-Z-multicast",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Y-systotic-Z-multicast",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -y+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -y+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systotic-X-multicast",
+    "Y-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, -y+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, -y+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systotic-X-multicast",
+    "Y-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[x+8*z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[x+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*x+z+64*t6, y+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[y+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*x+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systotic-Y-multicast",
+    "X-systolic"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, -x+t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, -x+t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+},
+{
+  "accEntries": [
+    "Stationary",
+    "Z-systotic-Y-multicast",
+    "X-multicast"
+  ],
+  "op": {
+    "CONV": [
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t1+t3, t2+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, -z+t1, t2]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[y+8*z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[y+8*z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "dataLayouts": [
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->W[8*y+z+64*t6, x+8*t5, t3, t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->I[x+8*t5, t2+t3, t1+t4]}",
+          "{E[x, y, z, t1, t2, t3, t4, t5, t6]->O[8*y+z+64*t6, t2, -z+t1]}"
+        ],
+        "bufDim": 4,
+        "bufSize": 8136,
+        "bwRequirement": 18.448979591836736,
+        "latency": 1627200.0,
+        "spaceRange": [
+          8,
+          8,
+          8
+        ]
+      }
+    ]
+  }
+}]
