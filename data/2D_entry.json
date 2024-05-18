@@ -1,6 +1,6 @@
 {
   "name": "2D PE array",
-  "spaceDims": 2,
+  "spaceDims": 2, 
   "spaceNames": [
     "x",
     "y"

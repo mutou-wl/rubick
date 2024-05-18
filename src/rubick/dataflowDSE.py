@@ -28,9 +28,10 @@ class DataflowDSE:
             if len(opSpec.tensors) != numTensors:
                 raise RuntimeError(
                     "DataflowDSE: Operatos have different number of tensors!")
-        for accEntries in self._iterAccEntries(numTensors):
+        for accEntries in self._iterAccEntries(numTensors): #枚举一些 access Entry
             yield (accEntries, [self._iterDataflow(opSpec, permuteOuter, exactReuse, accEntries) for opSpec in opSpecs])
 
+    # 找到所有和access entry匹配的 dataflow
     def _iterDataflow(self, opSpec: OpSpec, permuteOuter: Optional[int], exactReuse: bool, entries: List[AccessEntry]):
         for invDataflow, spaceSel, timeSel, varSet, spaceRange in self._iterInvDataflow(opSpec, entries):
             if exactReuse and not self._checkExactReuse(opSpec, invDataflow, entries):

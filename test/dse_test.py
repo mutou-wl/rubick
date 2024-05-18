@@ -4,7 +4,7 @@ from rubick.relation import *
 from rubick.ir import *
 from rubick.perfModel import PerfModel
 
-
+# 定义Tensor算子
 def makeCONV1D(s: int):
     opSpec = OpSpec(f"CONV1D-{s}")
 
@@ -122,11 +122,11 @@ def makeDWCONV():
 
 
 if __name__ == "__main__":
-    arraySpec = ArraySpec("data/3D_entry.json")
+    arraySpec = ArraySpec("data/2D_entry.json") #PE定义, 和所有的Access entry
 
     t0 = time()
-    ops = [makeCONV()]
-    perfModel = PerfModel(arraySpec)
+    ops = [makeCONV()] #期望搜索哪些op,  可以对多个算子寻找, 这里只写了一个
+    perfModel = PerfModel(arraySpec) #导入arraySpec
     perfModel(ops, 7, 65536, 2.56, False, "cube_conv.json")
 
     print(time() - t0)
