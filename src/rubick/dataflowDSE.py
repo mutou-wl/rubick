@@ -24,11 +24,13 @@ class DataflowDSE:
 
     def __call__(self, opSpecs: List[OpSpec], permuteOuter: Optional[int] = None, exactReuse: bool = False) -> Iterator[Tuple[List[AccessEntry], List[Iterator[Dataflow]]]]:
         numTensors = len(opSpecs[0].tensors)
-        for opSpec in opSpecs:
+        for opSpec in opSpecs:# 确保每个操作具有相同数量的张量
             if len(opSpec.tensors) != numTensors:
                 raise RuntimeError(
                     "DataflowDSE: Operatos have different number of tensors!")
-        for accEntries in self._iterAccEntries(numTensors): #枚举一些 access Entry
+            
+        for accEntries in self._iterAccEntries(numTensors):
+            # 每个 access entry 求逆 dataflow
             yield (accEntries, [self._iterDataflow(opSpec, permuteOuter, exactReuse, accEntries) for opSpec in opSpecs])
 
     # 找到所有和access entry匹配的 dataflow

@@ -16,11 +16,11 @@ class PerfModel:
     def __call__(
         self,
         ops: List[OpSpec],
-        maxBufDim: int,   # Buf的维度
-        bufSizeLimit: int,  # Buf的大小限制
-        bwCapcity: int,     # 位宽的容量限制
-        exactReuse: bool,  # 默认为False, 有bug 不用管
-        outFile: str
+        maxBufDim: int,   # Buf的维度  7
+        bufSizeLimit: int,  # Buf的大小限制  65536
+        bwCapcity: int,     # 位宽的容量限制  2.56
+        exactReuse: bool,   # 默认为False, 有bug 不用管
+        outFile: str        # 输出文件
     ):
         dse = DataflowDSE(self.arraySpec)  #生成迭代器 
         with open(outFile, "w") as fout:   #开始搜索 

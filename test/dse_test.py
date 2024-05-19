@@ -2,6 +2,7 @@ import time
 from rubick.dataflowDSE import DataflowDSE
 from rubick.relation import *
 from rubick.ir import *
+from rubick.interface import *
 from rubick.perfModel import PerfModel
 
 # 定义Tensor算子
@@ -23,7 +24,7 @@ def makeCONV1D(s: int):
 
 
 def makeGEMM():
-    opSpec = OpSpec("GEMM")
+    opSpec = OpSpec("GEMM") 
 
     i, j, k = opSpec.genIterators(3)
     A, B, C = opSpec.genTensors(3)
@@ -119,14 +120,12 @@ def makeDWCONV():
 
     opSpec.setExpr(O[c][ox][oy], W[c][rx][ry] * I[c][ox + rx][oy + ry])
     return opSpec
-
+ 
 
 if __name__ == "__main__":
-    arraySpec = ArraySpec("data/2D_entry.json") #PE定义, 和所有的Access entry
-
+    arraySpec = ArraySpec("data/2D_entry_test.json") #PE定义, 和所有的Access entry,  也就是导入搜索空间
     t0 = time()
-    ops = [makeCONV()] #期望搜索哪些op,  可以对多个算子寻找, 这里只写了一个
-    perfModel = PerfModel(arraySpec) #导入arraySpec
-    perfModel(ops, 7, 65536, 2.56, False, "cube_conv.json")
-
+    ops = [makeGEMM()] #期望搜索哪些op,  可以对多个算子寻找, 这里只写了一个
+    perfModel = PerfModel(arraySpec) # 导入arraySpec
+    perfModel(ops, 4, 65536, 2.56, False, "cube_conv.json")
     print(time() - t0)

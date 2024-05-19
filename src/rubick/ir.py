@@ -14,7 +14,7 @@ from rubick.relation import Relation, VarSet
 from rubick.interface import OpSpec
 from rubick.util import upDiv
 
-MAXBUFFERSIZE = 1 << 32
+MAXBUFFERSIZE = 1 << 32 # 4294967296
 
 
 class AccessEntry:
