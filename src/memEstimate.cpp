@@ -17,6 +17,9 @@ int main(int argv, char **argc) {
   auto *ifname = argc[1];
   auto *ofname = argc[2];
   int n = atoi(argc[3]);
+  printf("ifname: %s\n", ifname);
+  printf("ofname: %s\n", ofname);
+  printf("n: %d\n", n);
 
   ifstream fin{ifname};
   ofstream fout{ofname};

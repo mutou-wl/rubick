@@ -29,13 +29,13 @@ def makeGEMM():
     i, j, k = opSpec.genIterators(3)
     A, B, C = opSpec.genTensors(3)
 
-    i.setRange(0, 512)
-    j.setRange(0, 512)
-    k.setRange(0, 512)
+    i.setRange(0, 8)
+    j.setRange(0, 8)
+    k.setRange(0, 8)
 
-    A.setRange(512, 512)
-    B.setRange(512, 512)
-    C.setRange(512, 512)
+    A.setRange(8, 8)
+    B.setRange(8, 8)
+    C.setRange(8, 8)
 
     opSpec.setExpr(C[i][j], A[i][k] * B[k][j])
     return opSpec
@@ -127,5 +127,5 @@ if __name__ == "__main__":
     t0 = time()
     ops = [makeGEMM()] #期望搜索哪些op,  可以对多个算子寻找, 这里只写了一个
     perfModel = PerfModel(arraySpec) # 导入arraySpec
-    perfModel(ops, 4, 65536, 2.56, False, "cube_conv.json")
+    perfModel(ops, 6, 65536, 2.56, False, "cube_conv.json")
     print(time() - t0)

@@ -23,18 +23,23 @@ class DataflowDSE:
         #     r *= self.arraySpec.spaceRange
 
     def __call__(self, opSpecs: List[OpSpec], permuteOuter: Optional[int] = None, exactReuse: bool = False) -> Iterator[Tuple[List[AccessEntry], List[Iterator[Dataflow]]]]:
-        numTensors = len(opSpecs[0].tensors)
-        for opSpec in opSpecs:# 确保每个操作具有相同数量的张量
+        numTensors = len(opSpecs[0].tensors)# 3
+        for opSpec in opSpecs:# 检查: 确保每个操作具有相同数量的张量
             if len(opSpec.tensors) != numTensors:
-                raise RuntimeError(
+                raise RuntimeError( 
                     "DataflowDSE: Operatos have different number of tensors!")
             
         for accEntries in self._iterAccEntries(numTensors):
-            # 每个 access entry 求逆 dataflow
+            # 每个 access entry 求逆 dataflow, accEntries 包含所有张量的可能 access entry
+            # yield 一次返回一个值
+            # print(accEntries[0].name, accEntries[0].relation)
+            # print(accEntries[1].name, accEntries[1].relation)
+            # print(accEntries[2].name, accEntries[2].relation)
             yield (accEntries, [self._iterDataflow(opSpec, permuteOuter, exactReuse, accEntries) for opSpec in opSpecs])
 
-    # 找到所有和access entry匹配的 dataflow
+
     def _iterDataflow(self, opSpec: OpSpec, permuteOuter: Optional[int], exactReuse: bool, entries: List[AccessEntry]):
+        """找到所有和access entry匹配的 dataflow"""
         for invDataflow, spaceSel, timeSel, varSet, spaceRange in self._iterInvDataflow(opSpec, entries):
             if exactReuse and not self._checkExactReuse(opSpec, invDataflow, entries):
                 continue
@@ -89,9 +94,13 @@ class DataflowDSE:
                 yield makeDataflow(timeSel)
 
     def _iterAccEntries(self, n):
+        """获取所有张量的可能 access entry组合,并进行条件筛选出合适的组合"""
+
         def rankCheck(entries: List[AccessEntry]):
-            a = functools.reduce(lambda x, y: x.stack(
-                y, "T"), map(lambda x: x.relation, entries))
+            """检查矩阵的秩"""
+            # 对可迭代对象中的元素进行 reduce 操作, 归约为一个单一的值
+            a = functools.reduce(lambda x, y: x.stack(y, "T"), map(lambda x: x.relation, entries))
+            # np.linalg.matrix_rank 计算矩阵的秩
             return np.linalg.matrix_rank(a.mat) == self.arraySpec.spaceDims + 1
 
         def dirCheck(entries: List[AccessEntry]):
@@ -99,18 +108,21 @@ class DataflowDSE:
             mulVecs = set()
             for e in entries:
                 if not e.stationary:
-                    sysVecs.update(e.systolic)
+                    sysVecs.update(e.systolic) # 空集不加入
                     mulVecs.update(e.multicast)
-            return len(sysVecs & mulVecs) == 0
+            return len(sysVecs & mulVecs) == 0 # 如果 systolic 和 multicast 属性没有任何交集，函数将返回 True，否则返回 False。
 
         def ioCheck(entries: List[AccessEntry]):
             return reduce(lambda x, y: x and y, [e.canInput for e in entries[:-1]] + [entries[-1].canOutput])
 
         def validCheck(entries: List[AccessEntry]):
-            return rankCheck(entries) and dirCheck(entries) and ioCheck(entries)
+            return rankCheck(entries) and dirCheck(entries) and ioCheck(entries) # 三种条件都要满足
+        
+        # filter() 筛选出符合条件的元素, (函数, 序列) 返回符合的对象    
+        # itertools.product() 计算输入可迭代对象的笛卡尔积
         return filter(
-            validCheck,
-            itertools.product(*itertools.repeat(self.arraySpec.entries, n))
+            validCheck, # 检验条件函数
+            itertools.product(*itertools.repeat(self.arraySpec.entries, n))# PE的所有access entry, 三次迪卡尔乘积
         )
 
     def _iterInvDataflow(self, opSpec: OpSpec, entries: List[AccessEntry]) -> Iterator[Tuple[np.ndarray, List[int], int, VarSet, List[int]]]:

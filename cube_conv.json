@@ -8,17 +8,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, -y+t1]}",
-          "{E[x, y, t1, t2, t3]->B[-x+t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, x+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, -y+t1]}",
+          "{E[x, y, t1, t2, t3]->B[-x+t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, x+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -34,17 +34,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[-y+t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, x+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[-x+t1, x+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[-y+t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, x+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[-x+t1, x+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -60,17 +60,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, x+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[-x+t1, x+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, x+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[-x+t1, x+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -86,17 +86,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, t1]}",
-          "{E[x, y, t1, t2, t3]->B[-x+t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, x+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, t1]}",
+          "{E[x, y, t1, t2, t3]->B[-x+t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, x+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -112,17 +112,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, -x+t1]}",
-          "{E[x, y, t1, t2, t3]->B[-y+t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, y+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, -x+t1]}",
+          "{E[x, y, t1, t2, t3]->B[-y+t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, y+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -138,17 +138,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[-x+t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, y+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[-y+t1, y+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[-x+t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, y+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[-y+t1, y+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -164,17 +164,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, y+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[-y+t1, y+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, y+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[-y+t1, y+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -190,17 +190,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, t1]}",
-          "{E[x, y, t1, t2, t3]->B[-y+t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, y+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, t1]}",
+          "{E[x, y, t1, t2, t3]->B[-y+t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, y+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -216,17 +216,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, -y+t1]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, -x+t1]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, -y+t1]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, -x+t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -242,17 +242,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, t1]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, -x+t1]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, t1]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, -x+t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -268,17 +268,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, -x+t1]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, -y+t1]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, -x+t1]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, -y+t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -294,17 +294,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, t1]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, -y+t1]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, t1]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, -y+t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -320,17 +320,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, -y+t1]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, t1]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, -y+t1]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -346,17 +346,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, t1]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, t1]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, t1]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -372,17 +372,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, -x+t1]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, t1]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, -x+t1]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -398,17 +398,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, t1]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, t1]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, t1]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, t1]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -424,17 +424,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, -y+t1]}",
-          "{E[x, y, t1, t2, t3]->B[t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, x+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, -y+t1]}",
+          "{E[x, y, t1, t2, t3]->B[t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, x+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -450,17 +450,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[-y+t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, x+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[t1, x+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[-y+t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, x+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[t1, x+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -476,17 +476,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[y+8*t3, x+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[t1, x+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[y+4*t3, x+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[t1, x+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -502,17 +502,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[y+8*t2, t1]}",
-          "{E[x, y, t1, t2, t3]->B[t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[y+8*t2, x+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[y+4*t2, t1]}",
+          "{E[x, y, t1, t2, t3]->B[t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[y+4*t2, x+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -528,17 +528,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, -x+t1]}",
-          "{E[x, y, t1, t2, t3]->B[t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, y+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, -x+t1]}",
+          "{E[x, y, t1, t2, t3]->B[t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, y+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -554,17 +554,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[-x+t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, y+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[t1, y+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[-x+t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, y+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[t1, y+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -580,17 +580,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[t1, x+8*t3]}",
-          "{E[x, y, t1, t2, t3]->B[x+8*t3, y+8*t2]}",
-          "{E[x, y, t1, t2, t3]->C[t1, y+8*t2]}"
+          "{E[x, y, t1, t2, t3]->A[t1, x+4*t3]}",
+          "{E[x, y, t1, t2, t3]->B[x+4*t3, y+4*t2]}",
+          "{E[x, y, t1, t2, t3]->C[t1, y+4*t2]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]
@@ -606,17 +606,17 @@
     "GEMM": [
       {
         "dataLayouts": [
-          "{E[x, y, t1, t2, t3]->A[x+8*t2, t1]}",
-          "{E[x, y, t1, t2, t3]->B[t1, y+8*t3]}",
-          "{E[x, y, t1, t2, t3]->C[x+8*t2, y+8*t3]}"
+          "{E[x, y, t1, t2, t3]->A[x+4*t2, t1]}",
+          "{E[x, y, t1, t2, t3]->B[t1, y+4*t3]}",
+          "{E[x, y, t1, t2, t3]->C[x+4*t2, y+4*t3]}"
         ],
-        "bufDim": 1,
-        "bufSize": 8256,
-        "bwRequirement": 16.125,
-        "latency": 13209600.0,
+        "bufDim": 3,
+        "bufSize": 192,
+        "bwRequirement": 6.0,
+        "latency": 75.0,
         "spaceRange": [
-          8,
-          8
+          4,
+          4
         ]
       }
     ]

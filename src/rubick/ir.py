@@ -34,6 +34,8 @@ class AccessEntry:
         self._checkDimension()
 
         self._checkReuse()
+        # print(self.canInput)
+        # print("---------")
 
     def _checkDimension(self):
         pass
@@ -43,7 +45,7 @@ class AccessEntry:
         self.multicast = set()
         self.stationary = False
         for v in self.vecs:
-            if v[self.arraySpec.spaceDims] != 0:
+            if v[self.arraySpec.spaceDims] != 0: # 方向向量时间维度第一个为0 就为multicast
                 if np.sum(v != 0) > 1:
                     self.systolic.add(v.tolist)
                 else:
@@ -80,7 +82,7 @@ class AccessEntry:
         if timeDims < 1:
             raise RuntimeError("AccessEntry: can not extend to timeDims < 1")
         if timeDims == 1:
-            return self.relation
+            return self.relation 
 
         mat = self.relation.mat
         mat = np.vstack([
@@ -102,38 +104,41 @@ class DecomposeError(RuntimeError):
 
 
 class ArraySpec:
+    """PE-json的抽象, 用于描述PE阵列的属性"""
     def __init__(self, fileName):
         with open(fileName, "r") as fin:
             info = json.load(fin)
-            self.spaceDims : int = info["spaceDims"]
-            self.spaceNames : List[str] = info["spaceNames"]
-            self.spaceRange : List[int] = info["spaceRange"]
-            self.dirVecs : List[List[int]] = info["dirVecs"]
+            self.spaceDims : int = info["spaceDims"] #空间维度数量
+            self.spaceNames : List[str] = info["spaceNames"] # 空间维度名称
+            self.spaceRange : List[int] = info["spaceRange"]# 空间范围 PE阵列的长宽
+            self.dirVecs : List[List[int]] = info["dirVecs"] # 7个方向向量
             self.entries = [AccessEntry(self, i)
                             for i in info["entries"]]
 
-        self.name2Entry = {i.name: i for i in self.entries}
-        self._makeDecomposer()
+        self.name2Entry = {i.name: i for i in self.entries}# {X-systolic'': access entry} 名称映射到对应的 AccessEntry 对象。
+        self._makeDecomposer() # 调用内部方法, 构建分解器
+
 
     def _makeDecomposer(self):
         def findVec(vec):
-            for i, v in enumerate(self.dirVecs):
+            for i, v in enumerate(self.dirVecs): 
                 if np.all(vec == v):
-                    return i
+                    return i # 返回方向向量在dirVecs中对索引
             return -1
 
         for i, v in enumerate(self.dirVecs):
-            self.dirVecs[i] = np.array(v)
+            self.dirVecs[i] = np.array(v) # 转换为numpy数组
 
         self.vecSets = {}
-        for e in self.entries:
-            self.vecSets[e.name] = set()
+        for e in self.entries:# 对于每个access entry 进行遍历
+            self.vecSets[e.name] = set() # 集合, add()添加, remove()删除, union()并集, intersection()交集
             for row in e.vecs:
-                v = findVec(row)
+                v = findVec(row) # 得到基础向量在dirVecs中的索引
                 self.vecSets[e.name].add(v)
                 if v == -1:
-                    raise DecomposeError("Undefined dir-vec " + str(row) +
-                                         " in entry " + e.name)
+                    raise DecomposeError("Undefined dir-vec " + str(row) + " in entry " + e.name)
+        # print("vecSets:", self.vecSets)# {'X-systolic': {4}, 'X-systolic-Y-multicast': {1, 4}...}
+
 
     def lookUpEntry(self, movement: np.ndarray):
         r = self.spaceDims + 1 - np.linalg.matrix_rank(movement)

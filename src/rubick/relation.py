@@ -30,11 +30,13 @@ class VarSet:
 
 
 class Relation:
+    """关系式"""
     def __init__(self, inDom: str, inIndices: List[str], outDom: str, mat: np.ndarray):
-        self.inDom = inDom
-        self.inIndices = inIndices
-        self.outDom = outDom
-        self.mat = mat
+        # 假如 表达式为 {D[x, y, t1]->E[0, y, -x+t1]}
+        self.inDom = inDom # D
+        self.inIndices = inIndices # ['x', 'y', 't1']
+        self.outDom = outDom # E
+        self.mat = mat # [[ 0  0  0],[ 0  1  0],[-1  0  1]]
 
         if self.mat.shape[1] != len(self.inIndices):
             raise RuntimeError(
@@ -59,7 +61,7 @@ class Relation:
         )
 
     def stack(self, other, outDom):
-        if not isinstance(other, Relation):
+        if not isinstance(other, Relation):# 类型检查
             raise TypeError(
                 "Relation: the operands of chain should be another relation")
         if self.inDom != other.inDom:
@@ -72,7 +74,7 @@ class Relation:
             inDom=self.inDom,
             inIndices=self.inIndices,
             outDom=outDom,
-            mat=np.vstack((self.mat, other.mat))
+            mat=np.vstack((self.mat, other.mat)) # 在垂直方向（按行）进行堆叠
         )
 
     def toStr(self, sep=", ", haveBracket=True, toLatex=False):
@@ -123,7 +125,7 @@ class Relation:
 
     @staticmethod
     def read(expr: str, sep: str = ','):
-        x = expr.strip()
+        x = expr.strip()# 去除字符串两端的空白：
         if x[0] == '{' and x[-1] == '}':
             x = x[1:-1]
 

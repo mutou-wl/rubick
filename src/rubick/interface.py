@@ -158,16 +158,17 @@ class TensorExpr:
         return TensorMulExpr(self, other)
 
     def getAccFunc(self):
-
+        # map 是对列表中的元素都进行方法调用
+        # reduce 是对列表中的元素进行累积, 比如求和、求最大值, 取决于传入的函数
         return reduce(dictMerge, map(lambda x: x.getAccFunc(), self.sons))
 
 
 class TensorIndex(TensorExpr):
-    """张量的索引"""
+    """张量的索引, 允许嵌套索引:A[i] --> A[i][j]"""
     def __init__(self, tensor, idx, prev=None):
         super(TensorIndex, self).__init__()
         self.tensor = tensor
-        self.idx = idx
+        self.idx = idx #下标: iteraExpr, 迭代器表达式
         if prev is None:
             self.mat = [idx.expr.tolist()] # 索引矩阵
             self.const = [idx.const]  # 常量列表
@@ -265,20 +266,17 @@ class OpSpec:
         """设置操作的表达式和输出"""
         self.expr = rightValue # TensorMulExpr
         self.output = leftValue # TensorIndex
-        if isinstance(leftValue, TensorIndex):
-            print(f"leftValue tensor: {leftValue.tensor.name}")
-            print(f"leftValue idx: {leftValue.idx}")
-            print(f"leftValue mat: {leftValue.mat}")
-            print(f"leftValue const: {leftValue.const}")
         data = dictMerge(self.expr.getAccFunc(), leftValue.getAccFunc())
+        # print(data) {'A': {'accFunc': [[1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]}, 'B': {'accFunc': [[0.0, 0.0, 1.0], [0.0, 1.0, 0.0]]}, 'C': {'accFunc': [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0]]}}
         leftValue.tensor.isOutput = True
 
         inIndices = self.makeIndices()
 
         for u, v in data.items():
+            # print(u, v) # A {'accFunc': [[1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]}
             self.getTensor(u).accFunc = Relation(
                 "S", inIndices, u, np.array(v['accFunc']))
-
+            # print(self.getTensor(u).accFunc) # {S[i, j, k]->A[i, k]}
         self.output = leftValue.tensor.name
 
 
